@@ -174,7 +174,7 @@ uint160(hookAddress) & 0x3FFF == 0x0080   // 仅 BEFORE_SWAP_FLAG 位为 1
 ### 环境要求
 
 - Node.js ≥ 18
-- MetaMask 浏览器插件
+- OKX 浏览器插件
 
 ### 安装依赖
 
