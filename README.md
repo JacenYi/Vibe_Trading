@@ -3,7 +3,7 @@
 > A Uniswap v4 Hook demo that dynamically adjusts LP fees based on each trade's impact on pool reserves.
 
 [中文文档](./README_CN.md)
-```
+---
 [Project Introduction](./VIBE_TRADING_EN.md)
 ---
 
