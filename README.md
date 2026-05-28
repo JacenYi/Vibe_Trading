@@ -206,7 +206,7 @@ npm run deploy:local
 cd frontend && npm run dev
 ```
 
-Open `http://localhost:5173`. Connect MetaMask to `localhost:8545` (chainId 31337).
+Open `http://localhost:5173`. Connect OKX to `localhost:8545` (chainId 31337).
 
 The deploy script writes contract addresses to `frontend/src/constants/contracts.js` automatically.
 
@@ -299,7 +299,7 @@ Typical iteration count: < 15,000. Takes a few seconds on a modern CPU.
 | Button | Handler | Path |
 |---|---|---|
 | Simulate (read-only) | `handleSimulate` | `VolGuardHook.simulateFee()` — view call, zero gas — uses **user-input** pool value |
-| Execute Swap (real tx) | `handleExecute` | `VibeSwapRouter.swap()` — MetaMask tx — uses **on-chain** pool TVL from `token.balanceOf(poolManager)` |
+| Execute Swap (real tx) | `handleExecute` | `VibeSwapRouter.swap()` — OKX tx — uses **on-chain** pool TVL from `token.balanceOf(poolManager)` |
 
 ### Key hooks
 
@@ -341,7 +341,7 @@ Typical iteration count: < 15,000. Takes a few seconds on a modern CPU.
 | Smart contracts | Solidity 0.8.27, Uniswap v4 Core (`@uniswap/v4-core ^1.0.0`), EVM Cancun |
 | Development | Hardhat `^2.22`, `@nomicfoundation/hardhat-toolbox ^5` |
 | Frontend | React 18, Vite, ethers.js v6 |
-| Wallet | MetaMask (EIP-1193) |
+| Wallet | OKX (EIP-1193) |
 | Networks | X Layer mainnet (196), X Layer testnet (195), Hardhat local (31337) |
 | Verification | OKLink Etherscan, Sourcify |
 
