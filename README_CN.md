@@ -6,6 +6,10 @@
 
 ---
 
+[项目介绍](./VIBE_TRADING_CN.md)
+
+---
+
 ## 项目简介
 
 **Vibe Trading** 是一个基于 **Uniswap v4 Hook** 的动态手续费 AMM Demo。核心思路：每次 Swap 执行前，Hook 计算本次交易量占池子总价值的比率，并据此选择对应的手续费档位。
