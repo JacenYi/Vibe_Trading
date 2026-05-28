@@ -1,0 +1,34 @@
+// 各网络的合约部署地址（由 scripts/deploy.js 自动生成，请勿手动编辑）。
+
+export const CONTRACTS = {
+  // Hardhat 本地网络
+  31337: {
+    hookAddress:        "0x0000000000000000000000000000000000000000",
+    poolManagerAddress: "0x0000000000000000000000000000000000000000",
+    moodToken:          "0x0000000000000000000000000000000000000000",
+    usdcToken:          "0x0000000000000000000000000000000000000000",
+    routerAddress:      "0x0000000000000000000000000000000000000000",
+    demoPoolId:         "0x0000000000000000000000000000000000000000000000000000000000000000",
+    moodIsToken0:       true,
+  },
+  // X Layer 测试网
+  195: {
+    hookAddress:        "0x0000000000000000000000000000000000000000",
+    poolManagerAddress: "0x0000000000000000000000000000000000000000",
+    moodToken:          "0x0000000000000000000000000000000000000000",
+    usdcToken:          "0x0000000000000000000000000000000000000000",
+    routerAddress:      "0x0000000000000000000000000000000000000000",
+    demoPoolId:         "0x0000000000000000000000000000000000000000000000000000000000000000",
+    moodIsToken0:       true,
+  },
+  // X Layer 主网
+  196: {
+    hookAddress:        "0xd12Fd82cbBa717618c91952827fadaC13066C080",
+    poolManagerAddress: "0x360e68faccca8ca495c1b759fd9eee466db9fb32",
+    moodToken:          "0x76bfEF73EcD829F940CE385849F9177c0485B706",
+    usdcToken:          "0x7e826C03D6161385bbfa5eF93d59f81248Bff06a",
+    routerAddress:      "0x54a5483726Ae8a0c56EE85870912A6F80743Fc9B",
+    demoPoolId:         "0x0d3320a25aa8bc365d0a6e69ff1a3f6f5f60d22be4371c18e6f52c9b27ae9d66",
+    moodIsToken0:       true,
+  },
+};

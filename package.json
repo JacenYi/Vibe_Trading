@@ -1,0 +1,23 @@
+{
+  "name": "volguard-moodpool",
+  "version": "1.0.0",
+  "description": "VolGuard / Mood Pool — Uniswap v4 Dynamic Fee Hook",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "node": "hardhat node --hostname 0.0.0.0",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:testnet": "hardhat run scripts/deploy.js --network xlayer_testnet",
+    "deploy:mainnet": "hardhat run scripts/deploy.js --network xlayer_mainnet",
+    "mine": "node scripts/mineHookAddress.js",
+    "clean": "hardhat clean"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.0",
+    "dotenv": "^16.4.0"
+  },
+  "dependencies": {
+    "@uniswap/v4-core": "^1.0.0"
+  }
+}

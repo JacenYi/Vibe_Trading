@@ -1,0 +1,68 @@
+[
+  {
+    "inputs": [
+      { "internalType": "bytes32", "name": "rawPoolId",     "type": "bytes32" },
+      { "internalType": "uint256", "name": "absAmount",     "type": "uint256" },
+      { "internalType": "uint256", "name": "poolTotalValue","type": "uint256" }
+    ],
+    "name": "simulateFee",
+    "outputs": [
+      { "internalType": "uint24",  "name": "fee",       "type": "uint24"  },
+      { "internalType": "uint8",   "name": "moodIndex", "type": "uint8"   },
+      { "internalType": "uint256", "name": "nextEwma",  "type": "uint256" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "bytes32", "name": "rawPoolId", "type": "bytes32" }
+    ],
+    "name": "getPoolState",
+    "outputs": [
+      { "internalType": "uint256", "name": "ewma",      "type": "uint256" },
+      { "internalType": "uint24",  "name": "lastFee",   "type": "uint24"  },
+      { "internalType": "uint8",   "name": "moodIndex", "type": "uint8"   }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "riskConfig",
+    "outputs": [
+      { "internalType": "uint256", "name": "mediumTradeThreshold",   "type": "uint256" },
+      { "internalType": "uint256", "name": "whaleThreshold",         "type": "uint256" },
+      { "internalType": "uint256", "name": "ewmaWeightBps",          "type": "uint256" },
+      { "internalType": "uint256", "name": "volatilityMultiplierBps","type": "uint256" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "poolManager",
+    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true,  "internalType": "bytes32", "name": "poolId",      "type": "bytes32" },
+      { "indexed": false, "internalType": "uint24",  "name": "fee",         "type": "uint24"  },
+      { "indexed": false, "internalType": "uint256", "name": "tradeAmount", "type": "uint256" },
+      { "indexed": false, "internalType": "uint256", "name": "newEwma",     "type": "uint256" },
+      { "indexed": false, "internalType": "bool",    "name": "ratioModel",  "type": "bool"    }
+    ],
+    "name": "FeeSelected",
+    "type": "event"
+  }
+]

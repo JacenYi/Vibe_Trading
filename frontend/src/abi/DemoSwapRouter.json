@@ -1,0 +1,35 @@
+[
+  {"type":"function","name":"token0",        "inputs":[],"outputs":[{"type":"address"}],"stateMutability":"view"},
+  {"type":"function","name":"token1",        "inputs":[],"outputs":[{"type":"address"}],"stateMutability":"view"},
+  {"type":"function","name":"hook",          "inputs":[],"outputs":[{"type":"address"}],"stateMutability":"view"},
+  {"type":"function","name":"poolTotalValue","inputs":[],"outputs":[{"type":"uint256"}],"stateMutability":"view"},
+  {"type":"function","name":"swap",
+    "inputs":[
+      {"name":"amountIn",   "type":"uint256"},
+      {"name":"zeroForOne", "type":"bool"}
+    ],
+    "outputs":[
+      {"name":"amountOut",  "type":"uint256"},
+      {"name":"fee",        "type":"uint24"},
+      {"name":"feeCharged", "type":"uint256"}
+    ],
+    "stateMutability":"nonpayable"
+  },
+  {"type":"function","name":"addLiquidity",
+    "inputs":[
+      {"name":"amountToken0","type":"uint256"},
+      {"name":"amountToken1","type":"uint256"}
+    ],
+    "outputs":[],"stateMutability":"nonpayable"
+  },
+  {"type":"event","name":"Swapped",
+    "inputs":[
+      {"name":"trader",     "type":"address","indexed":true},
+      {"name":"zeroForOne", "type":"bool",   "indexed":false},
+      {"name":"amountIn",   "type":"uint256","indexed":false},
+      {"name":"amountOut",  "type":"uint256","indexed":false},
+      {"name":"fee",        "type":"uint24", "indexed":false},
+      {"name":"feeCharged", "type":"uint256","indexed":false}
+    ]
+  }
+]
