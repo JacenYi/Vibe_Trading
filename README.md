@@ -161,7 +161,7 @@ One-time deploy-time contract that seeds initial liquidity via `poolManager.modi
 ### Prerequisites
 
 - Node.js ≥ 18
-- MetaMask browser extension
+- OKX browser extension
 
 ### Install
 
