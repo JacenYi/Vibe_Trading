@@ -219,7 +219,7 @@ npm run deploy:local
 cd frontend && npm run dev
 ```
 
-打开 `http://localhost:5173`，MetaMask 连接 `localhost:8545`（chainId 31337）。
+打开 `http://localhost:5173`，OKX 连接 `localhost:8545`（chainId 31337）。
 
 部署脚本会自动将合约地址写入 `frontend/src/constants/contracts.js`。
 
@@ -310,7 +310,7 @@ node scripts/mineHookAddress.js
 | 按钮 | 处理函数 | 执行路径 |
 |---|---|---|
 | Simulate（只读） | `handleSimulate` | `VolGuardHook.simulateFee()` — view 调用，零 Gas，使用**用户输入**的池子总价值 |
-| Execute Swap（真实交易） | `handleExecute` | `VibeSwapRouter.swap()` — MetaMask 签名上链，使用**链上读取**的真实 TVL |
+| Execute Swap（真实交易） | `handleExecute` | `VibeSwapRouter.swap()` — OKX 签名上链，使用**链上读取**的真实 TVL |
 
 ### 核心 Hook 说明
 
@@ -352,7 +352,7 @@ node scripts/mineHookAddress.js
 | 智能合约 | Solidity 0.8.27，Uniswap v4 Core（`@uniswap/v4-core ^1.0.0`），EVM Cancun |
 | 开发工具 | Hardhat `^2.22`，`@nomicfoundation/hardhat-toolbox ^5` |
 | 前端 | React 18，Vite，ethers.js v6 |
-| 钱包 | MetaMask（EIP-1193） |
+| 钱包 | OKX（EIP-1193） |
 | 网络 | X Layer 主网（196），X Layer 测试网（195），Hardhat 本地（31337） |
 | 合约验证 | OKLink Etherscan，Sourcify |
 
